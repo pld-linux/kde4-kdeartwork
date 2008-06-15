@@ -1,11 +1,8 @@
 %define		_state		unstable
 %define		orgname		kdeartwork
 Summary:	K Desktop Environment - artwork
-Summary(es.UTF-8):	K Desktop Environment - Plugins e Scripts para aplicativos KDE
-Summary(ko.UTF-8):	KDE용
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
-Summary(pt_BR.UTF-8):	K Desktop Environment - Plugins e Scripts para aplicações KDE
-Name:		kdeartwork
+Name:		kde4-kdeartwork
 Version:	4.0.82
 Release:	1
 License:	LGPL
@@ -61,7 +58,6 @@ KDE ColorSchemes.
 
 %description -n kde-ColorSchemes -l pl.UTF-8
 Schematy kolorów dla kde.
-
 
 %package -n kde-emoticons
 Summary:	KDE emoticons themes
