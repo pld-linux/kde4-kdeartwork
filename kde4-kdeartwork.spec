@@ -47,7 +47,7 @@ Rozszerzenie dekoracji okna IceWM dla KDE.
 
 %package -n kde-ColorSchemes
 Summary:	KDE ColorSchemes
-Summary(pl.UTF-8):	Schematy kolorów dla kde
+Summary(pl.UTF-8):	Schematy kolorów dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase >= %{version}
 Obsoletes:	kdeartwork
@@ -57,7 +57,7 @@ Obsoletes:	kdeartwork-themes
 KDE ColorSchemes.
 
 %description -n kde-ColorSchemes -l pl.UTF-8
-Schematy kolorów dla kde.
+Schematy kolorów dla KDE.
 
 %package -n kde-emoticons
 Summary:	KDE emoticons themes
