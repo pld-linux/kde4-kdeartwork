@@ -244,10 +244,10 @@ KDE Wallpapers.
 Tapety dla KDE.
 
 %prep
-%setup -q
+%setup -q -n %{orgname}-%{version}
 
 %build
-mkdir build
+install -d build
 cd build
 %cmake \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
