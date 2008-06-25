@@ -37,9 +37,7 @@ adicionais para o KDE.
 Summary:	Extensions for KDE IceWM decoration
 Summary(pl.UTF-8):	Rozszerzenie dekoracji okna "IceWM" dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase-desktop >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
+Requires:	kde4-kdebase-workspace >= %{version}
 
 %description -n kde4-decoration-icewm
 Extensions for KDE "IceWM" decoration.
@@ -51,9 +49,7 @@ Rozszerzenie dekoracji okna IceWM dla KDE.
 Summary:	KDE ColorSchemes
 Summary(pl.UTF-8):	Schematy kolorów dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
+Requires:	kde4-kdebase-workspace >= %{version}
 
 %description -n kde4-ColorSchemes
 KDE ColorSchemes.
@@ -66,10 +62,6 @@ Summary:	KDE emoticons themes
 Summary(pl.UTF-8):	Motywy emotikon dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-icons-locolor
-Obsoletes:	kdeartwork-locolor
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-emoticons
 KDE emoticons themes.
@@ -81,11 +73,6 @@ Motywy emotikon dla KDE.
 Summary:	KDE Icons Theme - locolor
 Summary(pl.UTF-8):	Motyw ikon dla KDE - locolor
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-icons-locolor
-Obsoletes:	kdeartwork-locolor
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-icons-Locolor
 KDE Icons Theme - locolor.
@@ -97,9 +84,6 @@ Motyw ikon dla KDE - locolor.
 Summary:	KDE Icons Theme - Technical
 Summary(pl.UTF-8):	Motyw ikon dla KDE - Technical
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-icons-Technical
 KDE Icons Theme - Technical.
@@ -111,9 +95,6 @@ Motyw ikon dla KDE - Technical.
 Summary:	KDE Icons Theme - ikons
 Summary(pl.UTF-8):	Motyw ikon dla KDE - ikons
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-icons-ikons
 KDE Icons Theme - ikons.
@@ -125,9 +106,6 @@ Motyw ikon dla KDE - ikons.
 Summary:	KDE Icons Theme - kdeclassic
 Summary(pl.UTF-8):	Motyw ikon dla KDE - kdeclassic
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-icons-kdeclassic
 KDE Icons Theme - kdeclassic.
@@ -139,7 +117,6 @@ Motyw ikon dla KDE - kdeclassic.
 Summary:	KDE Icons Theme - kids
 Summary(pl.UTF-8):	Motyw ikon dla KDE - kids
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
 
 %description -n kde4-icons-kids
 KDE Icons Theme - kids.
@@ -151,9 +128,6 @@ Motyw ikon dla KDE - kids.
 Summary:	KDE Icons Theme - slick
 Summary(pl.UTF-8):	Motyw ikon dla KDE - slick
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-icons-slick
 KDE Icons Theme - slick.
@@ -165,9 +139,6 @@ Motyw ikon dla KDE - slick.
 Summary:	KDE Icons Theme - crystalsvg
 Summary(pl.UTF-8):	Motyw ikon dla KDE - crystalsvg
 Group:		X11/Amusements
-Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-icons-crystalsvg
 KDE Icons Theme - crystalsvg.
@@ -180,8 +151,6 @@ Summary:	KDE Style - Phase
 Summary(pl.UTF-8):	Styl dla KDE - Phase
 Group:		X11/Amusements
 Requires:	kde4-kdebase-core >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description -n kde4-style-phase
 KDE Style - Phase.
@@ -193,9 +162,7 @@ Styl dla KDE - Phase.
 Summary:	Themes for kworldclock
 Summary(pl.UTF-8):	Motywy dla kworldclock
 Group:		X11/Amusements
-Requires:	kdetoys-kworldclock >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes-kworldclock
+#Requires:	kde4-kdetoys-kworldclock >= %{version}
 
 %description kworldclock
 Themes for kworldclock.
@@ -208,8 +175,6 @@ Summary:	Screen savers for KDE
 Summary(pl.UTF-8):	Wygaszacze ekranu dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase-workspace-screensavers >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description screensavers
 Screen savers for KDE.
@@ -221,9 +186,7 @@ Wygaszacze ekranu dla KDE.
 Summary:	KDE Sounds
 Summary(pl.UTF-8):	Dźwięki dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
+Requires:	kde4-kdebase-core >= %{version}
 
 %description sounds
 KDE Sounds.
@@ -236,8 +199,6 @@ Summary:	KDE Wallpapers
 Summary(pl.UTF-8):	Tapety dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdelibs >= %{version}
-Obsoletes:	kdeartwork
-Obsoletes:	kdeartwork-themes
 
 %description wallpapers
 KDE Wallpapers.
