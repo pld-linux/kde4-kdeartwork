@@ -31,7 +31,7 @@ Pakiet ten zawiera różne grafiki i tym podobne dla KDE.
 kdeartwork contém temas, sons, papéis de parede e estilos de janelas
 adicionais para o KDE.
 
-%package -n kde-decoration-icewm
+%package -n kde4-decoration-icewm
 Summary:	Extensions for KDE IceWM decoration
 Summary(pl.UTF-8):	Rozszerzenie dekoracji okna "IceWM" dla KDE
 Group:		X11/Amusements
@@ -39,13 +39,13 @@ Requires:	kde4-kdebase-desktop >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-decoration-icewm
+%description -n kde4-decoration-icewm
 Extensions for KDE "IceWM" decoration.
 
-%description -n kde-decoration-icewm -l pl.UTF-8
+%description -n kde4-decoration-icewm -l pl.UTF-8
 Rozszerzenie dekoracji okna IceWM dla KDE.
 
-%package -n kde-ColorSchemes
+%package -n kde4-ColorSchemes
 Summary:	KDE ColorSchemes
 Summary(pl.UTF-8):	Schematy kolorów dla KDE
 Group:		X11/Amusements
@@ -53,13 +53,13 @@ Requires:	kde4-kdebase >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-ColorSchemes
+%description -n kde4-ColorSchemes
 KDE ColorSchemes.
 
-%description -n kde-ColorSchemes -l pl.UTF-8
+%description -n kde4-ColorSchemes -l pl.UTF-8
 Schematy kolorów dla KDE.
 
-%package -n kde-emoticons
+%package -n kde4-emoticons
 Summary:	KDE emoticons themes
 Summary(pl.UTF-8):	Motywy emotikon dla KDE
 Group:		X11/Amusements
@@ -69,13 +69,13 @@ Obsoletes:	kdeartwork-icons-locolor
 Obsoletes:	kdeartwork-locolor
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-emoticons
+%description -n kde4-emoticons
 KDE emoticons themes.
 
-%description -n kde-emoticons -l pl.UTF-8
+%description -n kde4-emoticons -l pl.UTF-8
 Motywy emotikon dla KDE.
 
-%package -n kde-icons-Locolor
+%package -n kde4-icons-Locolor
 Summary:	KDE Icons Theme - locolor
 Summary(pl.UTF-8):	Motyw ikon dla KDE - locolor
 Group:		X11/Amusements
@@ -85,13 +85,13 @@ Obsoletes:	kdeartwork-icons-locolor
 Obsoletes:	kdeartwork-locolor
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-icons-Locolor
+%description -n kde4-icons-Locolor
 KDE Icons Theme - locolor.
 
-%description -n kde-icons-Locolor -l pl.UTF-8
+%description -n kde4-icons-Locolor -l pl.UTF-8
 Motyw ikon dla KDE - locolor.
 
-%package -n kde-icons-Technical
+%package -n kde4-icons-Technical
 Summary:	KDE Icons Theme - Technical
 Summary(pl.UTF-8):	Motyw ikon dla KDE - Technical
 Group:		X11/Amusements
@@ -99,13 +99,13 @@ Requires:	kde4-kdelibs >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-icons-Technical
+%description -n kde4-icons-Technical
 KDE Icons Theme - Technical.
 
-%description -n kde-icons-Technical -l pl.UTF-8
+%description -n kde4-icons-Technical -l pl.UTF-8
 Motyw ikon dla KDE - Technical.
 
-%package -n kde-icons-ikons
+%package -n kde4-icons-ikons
 Summary:	KDE Icons Theme - ikons
 Summary(pl.UTF-8):	Motyw ikon dla KDE - ikons
 Group:		X11/Amusements
@@ -113,13 +113,13 @@ Requires:	kde4-kdelibs >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-icons-ikons
+%description -n kde4-icons-ikons
 KDE Icons Theme - ikons.
 
-%description -n kde-icons-ikons -l pl.UTF-8
+%description -n kde4-icons-ikons -l pl.UTF-8
 Motyw ikon dla KDE - ikons.
 
-%package -n kde-icons-kdeclassic
+%package -n kde4-icons-kdeclassic
 Summary:	KDE Icons Theme - kdeclassic
 Summary(pl.UTF-8):	Motyw ikon dla KDE - kdeclassic
 Group:		X11/Amusements
@@ -127,25 +127,25 @@ Requires:	kde4-kdelibs >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-icons-kdeclassic
+%description -n kde4-icons-kdeclassic
 KDE Icons Theme - kdeclassic.
 
-%description -n kde-icons-kdeclassic -l pl.UTF-8
+%description -n kde4-icons-kdeclassic -l pl.UTF-8
 Motyw ikon dla KDE - kdeclassic.
 
-%package -n kde-icons-kids
+%package -n kde4-icons-kids
 Summary:	KDE Icons Theme - kids
 Summary(pl.UTF-8):	Motyw ikon dla KDE - kids
 Group:		X11/Amusements
 Requires:	kde4-kdelibs >= %{version}
 
-%description -n kde-icons-kids
+%description -n kde4-icons-kids
 KDE Icons Theme - kids.
 
-%description -n kde-icons-kids -l pl.UTF-8
+%description -n kde4-icons-kids -l pl.UTF-8
 Motyw ikon dla KDE - kids.
 
-%package -n kde-icons-slick
+%package -n kde4-icons-slick
 Summary:	KDE Icons Theme - slick
 Summary(pl.UTF-8):	Motyw ikon dla KDE - slick
 Group:		X11/Amusements
@@ -153,13 +153,13 @@ Requires:	kde4-kdelibs >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-icons-slick
+%description -n kde4-icons-slick
 KDE Icons Theme - slick.
 
-%description -n kde-icons-slick -l pl.UTF-8
+%description -n kde4-icons-slick -l pl.UTF-8
 Motyw ikon dla KDE - slick.
 
-%package -n kde-icons-crystalsvg
+%package -n kde4-icons-crystalsvg
 Summary:	KDE Icons Theme - crystalsvg
 Summary(pl.UTF-8):	Motyw ikon dla KDE - crystalsvg
 Group:		X11/Amusements
@@ -167,13 +167,13 @@ Requires:	kde4-kdelibs >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-icons-crystalsvg
+%description -n kde4-icons-crystalsvg
 KDE Icons Theme - crystalsvg.
 
-%description -n kde-icons-crystalsvg -l pl.UTF-8
+%description -n kde4-icons-crystalsvg -l pl.UTF-8
 Motyw ikon dla KDE - crystalsvg.
 
-%package -n kde-style-phase
+%package -n kde4-style-phase
 Summary:	KDE Style - Phase
 Summary(pl.UTF-8):	Styl dla KDE - Phase
 Group:		X11/Amusements
@@ -181,10 +181,10 @@ Requires:	kde4-kdebase-core >= %{version}
 Obsoletes:	kdeartwork
 Obsoletes:	kdeartwork-themes
 
-%description -n kde-style-phase
+%description -n kde4-style-phase
 KDE Style - Phase.
 
-%description -n kde-style-phase -l pl.UTF-8
+%description -n kde4-style-phase -l pl.UTF-8
 Styl dla KDE - Phase.
 
 %package kworldclock
@@ -264,43 +264,43 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -n kde-decoration-icewm
+%files -n kde4-decoration-icewm
 %defattr(644,root,root,755)
 %{_datadir}/apps/kwin/icewm-themes
 
-%files -n kde-ColorSchemes
+%files -n kde4-ColorSchemes
 %defattr(644,root,root,755)
 %{_datadir}/apps/color-schemes/*.colors
 
-%files -n kde-emoticons
+%files -n kde4-emoticons
 %defattr(644,root,root,755)
 %{_datadir}/emoticons
 
-%files -n kde-icons-Locolor
+%files -n kde4-icons-Locolor
 %defattr(644,root,root,755)
 %{_iconsdir}/Locolor
 
-%files -n kde-icons-ikons
+%files -n kde4-icons-ikons
 %defattr(644,root,root,755)
 %{_iconsdir}/ikons
 
-%files -n kde-icons-kdeclassic
+%files -n kde4-icons-kdeclassic
 %defattr(644,root,root,755)
 %{_iconsdir}/kdeclassic
 
-%files -n kde-icons-kids
+%files -n kde4-icons-kids
 %defattr(644,root,root,755)
 %{_iconsdir}/kids
 
-%files -n kde-icons-slick
+%files -n kde4-icons-slick
 %defattr(644,root,root,755)
 %{_iconsdir}/slick
 
-%files -n kde-icons-crystalsvg
+%files -n kde4-icons-crystalsvg
 %defattr(644,root,root,755)
 %{_iconsdir}/crystalsvg
 
-%files -n kde-style-phase
+%files -n kde4-style-phase
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/kde4/kstyle_phase_config.so
 %attr(755,root,root) %{_libdir}/kde4/plugins/styles/phasestyle.so
