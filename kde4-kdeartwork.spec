@@ -11,10 +11,10 @@ Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version
 # Source0-md5:	d1d15673f1314d9258074ede27c9e8ec
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
+BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
