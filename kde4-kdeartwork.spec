@@ -15,6 +15,8 @@ BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	libxml2-progs
+BuildRequires:	phonon-devel >= 4.1.83
+BuildRequires:	strigi-devel >= 0.5.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
