@@ -3,12 +3,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.0.83
+Version:	4.0.84
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	462a06012368a054649641c202fe590b
+# Source0-md5:	46fe655ecde6597c19fc625d191154e5
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	automoc4 >= 0.9.83
@@ -146,6 +146,17 @@ KDE Icons Theme - crystalsvg.
 %description -n kde4-icons-crystalsvg -l pl.UTF-8
 Motyw ikon dla KDE - crystalsvg.
 
+%package -n kde4-icons-nuvola
+Summary:	KDE Icons Theme - nuvola
+Summary(pl.UTF-8):	Motyw ikon dla KDE - nuvola
+Group:		X11/Amusements
+
+%description -n kde4-icons-nuvola
+KDE Icons Theme - nuvola.
+
+%description -n kde4-icons-nuvola -l pl.UTF-8
+Motyw ikon dla KDE - nuvola.
+
 %package -n kde4-style-phase
 Summary:	KDE Style - Phase
 Summary(pl.UTF-8):	Styl dla KDE - Phase
@@ -265,6 +276,10 @@ rm -rf $RPM_BUILD_ROOT
 %files -n kde4-icons-crystalsvg
 %defattr(644,root,root,755)
 %{_iconsdir}/crystalsvg
+
+%files -n kde4-icons-nuvola
+%defattr(644,root,root,755)
+%{_iconsdir}/nuvola
 
 %files -n kde4-style-phase
 %defattr(644,root,root,755)
