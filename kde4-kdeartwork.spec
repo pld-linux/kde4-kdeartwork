@@ -1,14 +1,14 @@
-%define		_state		unstable
+%define		_state		stable
 %define		orgname		kdeartwork
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.0.98
+Version:	4.1.0
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	7a86d32c99eb0360fea32154b30a9254
+# Source0-md5:	3de07b7d7bc5219d135c68dce4266861
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	automoc4 >= 0.9.83
