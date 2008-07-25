@@ -4,7 +4,7 @@ Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
 Version:	4.1.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -14,6 +14,8 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
+# for kscreensaver.h
+BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
 BuildRequires:	phonon-devel >= 4.1.83
 BuildRequires:	strigi-devel >= 0.5.9
