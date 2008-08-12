@@ -1,5 +1,7 @@
 %define		_state		stable
 %define		orgname		kdeartwork
+%define		qtver		4.4.0
+
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
@@ -11,13 +13,18 @@ Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version
 # Source0-md5:	3de07b7d7bc5219d135c68dce4266861
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
+BuildRequires:	Qt3Support-devel >= %{qtver}
+BuildRequires:	QtCore-devel >= %{qtver}
+BuildRequires:	QtGui-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.83
+BuildRequires:	cmake
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
 BuildRequires:	phonon-devel >= 4.1.83
+BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	strigi-devel >= 0.5.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
