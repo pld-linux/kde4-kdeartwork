@@ -16,7 +16,7 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtGui-devel >= %{qtver}
-BuildRequires:	automoc4 >= 0.9.83
+BuildRequires:	automoc4 >= 0.9.84
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
