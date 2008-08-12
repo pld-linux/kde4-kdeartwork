@@ -13,7 +13,9 @@ Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version
 # Source0-md5:	15ca863ec4a878e51c76126fce4f521d
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
+BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
+BuildRequires:	QtGui-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
@@ -21,6 +23,7 @@ BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
 BuildRequires:	phonon-devel >= 4.2.0
+BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	strigi-devel >= 0.5.12
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
