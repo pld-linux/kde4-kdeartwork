@@ -1,24 +1,27 @@
-%define		_state		stable
+%define		_state		unstable
 %define		orgname		kdeartwork
+%define		qtver		4.4.1
+
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.1.0
-Release:	2
+Version:	4.1.61
+Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	3de07b7d7bc5219d135c68dce4266861
+# Source0-md5:	15ca863ec4a878e51c76126fce4f521d
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
+BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.83
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	phonon-devel >= 4.1.83
-BuildRequires:	strigi-devel >= 0.5.9
+BuildRequires:	phonon-devel >= 4.2.0
+BuildRequires:	strigi-devel >= 0.5.12
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -227,6 +230,7 @@ install -d build
 cd build
 %cmake \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
+	-DCMAKE_AR=/usr/bin/ar \
 %if "%{_lib}" == "lib64"
 	-DLIB_SUFFIX=64 \
 %endif
