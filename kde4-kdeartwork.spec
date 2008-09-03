@@ -195,6 +195,7 @@ Summary:	Screen savers for KDE
 Summary(pl.UTF-8):	Wygaszacze ekranu dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase-workspace-screensavers >= %{version}
+Conflicts:	kdeartwork-screensaver
 
 %description screensavers
 Screen savers for KDE.
