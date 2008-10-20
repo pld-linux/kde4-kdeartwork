@@ -1,16 +1,17 @@
 %define		_state		unstable
 %define		orgname		kdeartwork
-%define		qtver		4.4.1
+%define		qtver		4.4.3
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.1.69
-Release:	2
+Version:	4.1.70
+Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	911e16500556e78c066965a8f2931665
+# Source0-md5:	4318e28267fe44f9cb905509decd0871
+Patch0:		%{name}-findxscreensaver.patch
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	Qt3Support-devel >= %{qtver}
@@ -228,6 +229,7 @@ Tapety dla KDE.
 
 %prep
 %setup -q -n %{orgname}-%{version}
+%patch0 -p0
 
 %build
 install -d build
