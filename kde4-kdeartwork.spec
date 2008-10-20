@@ -27,6 +27,7 @@ BuildRequires:	libxml2-progs
 BuildRequires:	phonon-devel >= 4.2.0
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	strigi-devel >= 0.5.12
+BuildRequires:	xscreensaver-base
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
