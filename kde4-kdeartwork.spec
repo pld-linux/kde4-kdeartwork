@@ -305,6 +305,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files screensavers
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/kxsconfig
+%attr(755,root,root) %{_bindir}/kxsrun
 %attr(755,root,root) %{_bindir}/*.kss
 %{_datadir}/kde4/services/ScreenSavers/*.desktop
 %{_datadir}/apps/kfiresaver
