@@ -170,7 +170,7 @@ Motyw ikon dla KDE - nuvola.
 Summary:	KDE Style - Phase
 Summary(pl.UTF-8):	Styl dla KDE - Phase
 Group:		X11/Amusements
-Requires:	kde4-kdebase-core >= %{version}
+Requires:	kde4-kdebase >= %{version}
 
 %description -n kde4-style-phase
 KDE Style - Phase.
@@ -206,7 +206,7 @@ Wygaszacze ekranu dla KDE.
 Summary:	KDE Sounds
 Summary(pl.UTF-8):	Dźwięki dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase-core >= %{version}
+Requires:	kde4-kdebase >= %{version}
 
 %description sounds
 KDE Sounds.
