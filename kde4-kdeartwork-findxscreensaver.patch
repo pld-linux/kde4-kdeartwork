@@ -1,0 +1,10 @@
+--- cmake/modules/FindXscreensaver.cmake.orig	2008-10-20 11:56:52.000000000 +0200
++++ cmake/modules/FindXscreensaver.cmake	2008-10-20 11:57:06.000000000 +0200
+@@ -141,6 +141,7 @@
+ if(NOT XSCREENSAVER_CONFIG_DIR)
+   FIND_PATH(XSCREENSAVER_CONFIG_DIR deco.xml
+      /etc/xscreensaver
++     /usr/share/xscreensaver
+      )
+ endif(NOT XSCREENSAVER_CONFIG_DIR)
+ 
