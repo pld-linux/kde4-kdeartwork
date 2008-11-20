@@ -18,7 +18,7 @@ BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtGui-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.84
-BuildRequires:	cmake >= 2.6.1-2
+BuildRequires:	cmake >= 2.6.2
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
