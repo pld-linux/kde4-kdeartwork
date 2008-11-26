@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.1.73
+Version:	4.1.80
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	a4a002a7f849a24271d620440c3fbf2f
+# Source0-md5:	5016d1e9c01e9e090c9d83e5da3b47bc
 Patch0:		%{name}-findxscreensaver.patch
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
@@ -24,7 +24,7 @@ BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	phonon-devel >= 4.2.0
+BuildRequires:	phonon-devel >= 4.2.80
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	strigi-devel >= 0.5.12
 BuildRequires:	xscreensaver-base
