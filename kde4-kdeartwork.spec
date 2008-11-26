@@ -1,31 +1,33 @@
-%define		_state		stable
+%define		_state		unstable
 %define		orgname		kdeartwork
-%define		qtver		4.4.0
+%define		qtver		4.4.3
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.1.0
-Release:	2
+Version:	4.1.80
+Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	3de07b7d7bc5219d135c68dce4266861
+# Source0-md5:	5016d1e9c01e9e090c9d83e5da3b47bc
+Patch0:		%{name}-findxscreensaver.patch
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtGui-devel >= %{qtver}
-BuildRequires:	automoc4 >= 0.9.83
-BuildRequires:	cmake
+BuildRequires:	automoc4 >= 0.9.84
+BuildRequires:	cmake >= 2.6.2
 BuildRequires:	ed
 BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	phonon-devel >= 4.1.83
+BuildRequires:	phonon-devel >= 4.2.80
 BuildRequires:	qt4-qmake >= %{qtver}
-BuildRequires:	strigi-devel >= 0.5.9
+BuildRequires:	strigi-devel >= 0.5.12
+BuildRequires:	xscreensaver-base
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -170,7 +172,7 @@ Motyw ikon dla KDE - nuvola.
 Summary:	KDE Style - Phase
 Summary(pl.UTF-8):	Styl dla KDE - Phase
 Group:		X11/Amusements
-Requires:	kde4-kdebase-core >= %{version}
+Requires:	kde4-kdebase >= %{version}
 
 %description -n kde4-style-phase
 KDE Style - Phase.
@@ -195,7 +197,6 @@ Summary:	Screen savers for KDE
 Summary(pl.UTF-8):	Wygaszacze ekranu dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase-workspace-screensavers >= %{version}
-Conflicts:	kdeartwork-screensaver
 
 %description screensavers
 Screen savers for KDE.
@@ -207,7 +208,7 @@ Wygaszacze ekranu dla KDE.
 Summary:	KDE Sounds
 Summary(pl.UTF-8):	Dźwięki dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase-core >= %{version}
+Requires:	kde4-kdebase >= %{version}
 
 %description sounds
 KDE Sounds.
@@ -229,6 +230,7 @@ Tapety dla KDE.
 
 %prep
 %setup -q -n %{orgname}-%{version}
+%patch0 -p0
 
 %build
 install -d build
@@ -303,6 +305,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files screensavers
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/kxsconfig
+%attr(755,root,root) %{_bindir}/kxsrun
 %attr(755,root,root) %{_bindir}/*.kss
 %{_datadir}/kde4/services/ScreenSavers/*.desktop
 %{_datadir}/apps/kfiresaver
