@@ -6,12 +6,13 @@ Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
 Version:	4.1.82
-Release:	1
+Release:	2
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
 # Source0-md5:	6a381ecaf004921ab83fed78204ef93c
 Patch0:		%{name}-findxscreensaver.patch
+Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	Qt3Support-devel >= %{qtver}
@@ -150,6 +151,7 @@ Motyw ikon dla KDE - slick.
 Summary:	KDE Icons Theme - crystalsvg
 Summary(pl.UTF-8):	Motyw ikon dla KDE - crystalsvg
 Group:		X11/Amusements
+Requires:	hicolor-icon-theme
 
 %description -n kde4-icons-crystalsvg
 KDE Icons Theme - crystalsvg.
@@ -231,6 +233,7 @@ Tapety dla KDE.
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
+%patch1 -p1
 
 %build
 install -d build
