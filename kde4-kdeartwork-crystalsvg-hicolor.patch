@@ -1,0 +1,10 @@
+--- kdeartwork-4.1.82/IconThemes/crystalsvg/index.theme~	2008-11-19 12:20:16.000000000 +0200
++++ kdeartwork-4.1.82/IconThemes/crystalsvg/index.theme	2008-12-09 00:34:14.433963528 +0200
+@@ -74,6 +74,7 @@
+ Comment[x-test]=xxIcon Theme by Everaldo.com Design Studioxx
+ Comment[zh_CN]=由 Everaldo 设计工作室(www.everaldo.com)制作的图标主题
+ Comment[zh_TW]=由 Everaldo.com 設計團隊設計的圖示主題
++Inherits=hicolor
+ DisplayDepth=32
+ Example=folder
+ LinkOverlay=link_overlay
