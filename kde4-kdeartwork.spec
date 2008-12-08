@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.1.81
+Version:	4.1.82
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	eb30ee0ff9ef01823db43117ba1861c9
+# Source0-md5:	6a381ecaf004921ab83fed78204ef93c
 Patch0:		%{name}-findxscreensaver.patch
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
