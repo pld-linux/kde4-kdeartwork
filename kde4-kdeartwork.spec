@@ -304,6 +304,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files kworldclock
 %defattr(644,root,root,755)
+%dir %{_datadir}/apps/kworldclock
 %{_datadir}/apps/kworldclock/maps
 
 %files screensavers
