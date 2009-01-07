@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.1.85
+Version:	4.1.87
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	bd9a81e95cf9b6d7aff427fef343f5f1
+# Source0-md5:	1f2811550150be3fdf4a41d11710b286
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -230,10 +230,22 @@ KDE Wallpapers.
 %description wallpapers -l pl.UTF-8
 Tapety dla KDE.
 
+%package -n kde4-desktopthemes
+Summary:	KDE Desktop Themes
+Summary(pl.UTF-8):	Tematy pulpitu dla KDE
+Group:		X11/Amusements
+Requires:	kde4-kdebase-workspace >= %{version}
+
+%description -n kde4-desktopthemes
+KDE Desktop Themes.
+
+%description -n kde4-desktopthemes -l pl.UTF-8
+Tematy pulpitu dla KDE.
+
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
-%patch1 -p1
+#%patch1 -p1
 
 %build
 install -d build
@@ -256,9 +268,9 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -n kde4-decoration-icewm
-%defattr(644,root,root,755)
-%{_datadir}/apps/kwin/icewm-themes
+#%files -n kde4-decoration-icewm
+#%defattr(644,root,root,755)
+#%{_datadir}/apps/kwin/icewm-themes
 
 %files -n kde4-ColorSchemes
 %defattr(644,root,root,755)
@@ -268,33 +280,33 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/emoticons
 
-%files -n kde4-icons-Locolor
-%defattr(644,root,root,755)
-%{_iconsdir}/Locolor
+#%files -n kde4-icons-Locolor
+#%defattr(644,root,root,755)
+#%{_iconsdir}/Locolor
 
-%files -n kde4-icons-ikons
-%defattr(644,root,root,755)
-%{_iconsdir}/ikons
+#%files -n kde4-icons-ikons
+#%defattr(644,root,root,755)
+#%{_iconsdir}/ikons
 
 %files -n kde4-icons-kdeclassic
 %defattr(644,root,root,755)
 %{_iconsdir}/kdeclassic
 
-%files -n kde4-icons-kids
-%defattr(644,root,root,755)
-%{_iconsdir}/kids
+#%files -n kde4-icons-kids
+#%defattr(644,root,root,755)
+#%{_iconsdir}/kids
 
-%files -n kde4-icons-slick
-%defattr(644,root,root,755)
-%{_iconsdir}/slick
+#%files -n kde4-icons-slick
+#%defattr(644,root,root,755)
+#%{_iconsdir}/slick
 
-%files -n kde4-icons-crystalsvg
-%defattr(644,root,root,755)
-%{_iconsdir}/crystalsvg
+#%files -n kde4-icons-crystalsvg
+#%defattr(644,root,root,755)
+#%{_iconsdir}/crystalsvg
 
-%files -n kde4-icons-nuvola
-%defattr(644,root,root,755)
-%{_iconsdir}/nuvola
+#%files -n kde4-icons-nuvola
+#%defattr(644,root,root,755)
+#%{_iconsdir}/nuvola
 
 %files -n kde4-style-phase
 %defattr(644,root,root,755)
@@ -302,10 +314,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/kde4/plugins/styles/phasestyle.so
 %{_datadir}/apps/kstyle/themes/phase.themerc
 
-%files kworldclock
-%defattr(644,root,root,755)
-%dir %{_datadir}/apps/kworldclock
-%{_datadir}/apps/kworldclock/maps
+#%files kworldclock
+#%defattr(644,root,root,755)
+#%dir %{_datadir}/apps/kworldclock
+#%{_datadir}/apps/kworldclock/maps
 
 %files screensavers
 %defattr(644,root,root,755)
@@ -323,3 +335,12 @@ rm -rf $RPM_BUILD_ROOT
 %files wallpapers
 %defattr(644,root,root,755)
 %{_datadir}/wallpapers/*
+
+%files -n kde4-desktopthemes
+%defattr(644,root,root,755)
+%{_datadir}/apps/desktoptheme/Aya
+%{_datadir}/apps/desktoptheme/Clean-Blend
+%{_datadir}/apps/desktoptheme/Elegance
+%{_datadir}/apps/desktoptheme/Silicon
+%{_datadir}/apps/desktoptheme/heron
+%{_datadir}/apps/desktoptheme/slim-glow
