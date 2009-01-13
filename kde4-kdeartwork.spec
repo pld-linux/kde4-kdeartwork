@@ -25,9 +25,9 @@ BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	phonon-devel >= 4.2.80
+BuildRequires:	phonon-devel >= 4.2.96
 BuildRequires:	qt4-qmake >= %{qtver}
-BuildRequires:	strigi-devel >= 0.5.12
+BuildRequires:	strigi-devel >= 0.6.3
 BuildRequires:	xscreensaver-base
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
