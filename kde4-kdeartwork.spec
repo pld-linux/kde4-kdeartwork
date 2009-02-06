@@ -232,7 +232,7 @@ Tapety dla KDE.
 
 %package -n kde4-desktopthemes
 Summary:	KDE Desktop Themes
-Summary(pl.UTF-8):	Tematy pulpitu dla KDE
+Summary(pl.UTF-8):	Motywy pulpitu dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase-workspace >= %{version}
 
@@ -240,11 +240,12 @@ Requires:	kde4-kdebase-workspace >= %{version}
 KDE Desktop Themes.
 
 %description -n kde4-desktopthemes -l pl.UTF-8
-Tematy pulpitu dla KDE.
+Motywy pulpitu dla KDE.
 
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
+# ???
 #%patch1 -p1
 
 %build
