@@ -1,10 +1,11 @@
---- cmake/modules/FindXscreensaver.cmake.orig	2008-10-20 11:56:52.000000000 +0200
-+++ cmake/modules/FindXscreensaver.cmake	2008-10-20 11:57:06.000000000 +0200
-@@ -141,6 +141,7 @@
- if(NOT XSCREENSAVER_CONFIG_DIR)
-   FIND_PATH(XSCREENSAVER_CONFIG_DIR deco.xml
-      /etc/xscreensaver
-+     /usr/share/xscreensaver
-      )
- endif(NOT XSCREENSAVER_CONFIG_DIR)
+--- cmake/modules/FindXscreensaver.cmake.orig	2009-02-26 15:18:09.000000000 +0100
++++ cmake/modules/FindXscreensaver.cmake	2009-02-27 17:07:30.704815247 +0100
+@@ -27,7 +27,7 @@
+   FIND_PATH(XSCREENSAVER_DIR deco ${xscreensaver_alldirs})
  
+   set(XSCREENSAVER_CONFIG_DIR)
+-  FIND_PATH(XSCREENSAVER_CONFIG_DECO config/deco.xml
++  FIND_PATH(XSCREENSAVER_CONFIG_DECO deco.xml
+     ${KDE4_INCLUDE_DIR}
+     /usr/
+     /usr/local/
