@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.2.0
-Release:	5
+Version:	4.2.1
+Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	d81623b60c7deb314bc2e28a52254ac2
+# Source0-md5:	2712142e1cd452f6ada441a310a971d6
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -25,7 +25,7 @@ BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	phonon-devel >= 4.3.0
+BuildRequires:	phonon-devel >= 4.3.1
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	strigi-devel >= 0.6.3
 BuildRequires:	xscreensaver-base
@@ -245,8 +245,7 @@ Motywy pulpitu dla KDE.
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
-# ???
-#%patch1 -p1
+#%patch1 -p0
 
 %build
 install -d build
