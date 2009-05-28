@@ -1,16 +1,18 @@
-%define		_state		stable
+%define		_state		unstable
 %define		orgname		kdeartwork
 %define		qtver		4.5.0
+%define		svn		969966
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.2.3
-Release:	3
+Version:	4.2.87
+Release:	1
 License:	LGPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	6867919e82d111b0a2c0fe4067f41591
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}svn%{svn}.tar.bz2
+# Source0-md5:	dbf12210a2fd4ba5a9dc240a46b51ccd
+#Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -243,7 +245,7 @@ KDE Desktop Themes.
 Motywy pulpitu dla KDE.
 
 %prep
-%setup -q -n %{orgname}-%{version}
+%setup -q -n %{orgname}-%{version}svn%{svn}
 %patch0 -p0
 #%patch1 -p0
 
@@ -289,9 +291,9 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%{_iconsdir}/ikons
 
-%files -n kde4-icons-kdeclassic
-%defattr(644,root,root,755)
-%{_iconsdir}/kdeclassic
+#%files -n kde4-icons-kdeclassic
+#%defattr(644,root,root,755)
+#%{_iconsdir}/kdeclassic
 
 #%files -n kde4-icons-kids
 #%defattr(644,root,root,755)
@@ -305,9 +307,9 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%{_iconsdir}/crystalsvg
 
-#%files -n kde4-icons-nuvola
-#%defattr(644,root,root,755)
-#%{_iconsdir}/nuvola
+%files -n kde4-icons-nuvola
+%defattr(644,root,root,755)
+%{_iconsdir}/nuvola
 
 %files -n kde4-style-phase
 %defattr(644,root,root,755)
