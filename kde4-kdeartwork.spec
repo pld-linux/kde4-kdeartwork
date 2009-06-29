@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.2.4
+Version:	4.2.95
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	4b328ee82c0ee47cb21c5d6d6aa87409
+# Source0-md5:	aab6bc82f964d3053ad989d841fc5818
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -289,9 +289,9 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%{_iconsdir}/ikons
 
-%files -n kde4-icons-kdeclassic
-%defattr(644,root,root,755)
-%{_iconsdir}/kdeclassic
+#%files -n kde4-icons-kdeclassic
+#%defattr(644,root,root,755)
+#%{_iconsdir}/kdeclassic
 
 #%files -n kde4-icons-kids
 #%defattr(644,root,root,755)
@@ -305,9 +305,9 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%{_iconsdir}/crystalsvg
 
-#%files -n kde4-icons-nuvola
-#%defattr(644,root,root,755)
-#%{_iconsdir}/nuvola
+%files -n kde4-icons-nuvola
+%defattr(644,root,root,755)
+%{_iconsdir}/nuvola
 
 %files -n kde4-style-phase
 %defattr(644,root,root,755)
