@@ -1,16 +1,16 @@
 %define		_state		unstable
 %define		orgname		kdeartwork
-%define		qtver		4.5.1
+%define		qtver		4.5.2
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.2.96
+Version:	4.2.98
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	84097eff13e9ff3db813ca90551993c9
+# Source0-md5:	d7ce2e6a819d4b3f524941343321de72
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
