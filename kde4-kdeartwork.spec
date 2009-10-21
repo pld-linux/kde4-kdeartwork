@@ -1,16 +1,17 @@
-%define		_state		stable
+%define		_state		unstable
 %define		orgname		kdeartwork
-%define		qtver		4.5.3
+%define		qtver		4.6.0
+%define		snap		svn1035674
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.3.2
+Version:	4.3.72
 Release:	1
 License:	LGPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	e4e51be6fe0eaf1290604884a64d28a3
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}%{snap}.tar.bz2
+# Source0-md5:	730f7fd8a2c7e9afe5cecddbb180897f
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -243,7 +244,8 @@ KDE Desktop Themes.
 Motywy pulpitu dla KDE.
 
 %prep
-%setup -q -n %{orgname}-%{version}
+#%setup -q -n %{orgname}-%{version}
+%setup -q -n %{orgname}-%{version}%{snap}
 %patch0 -p0
 #%patch1 -p0
 
