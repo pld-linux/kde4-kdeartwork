@@ -1,7 +1,6 @@
 %define		_state		unstable
 %define		orgname		kdeartwork
 %define		qtver		4.6.0
-%define		snap		svn1048496
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
