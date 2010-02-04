@@ -1,16 +1,16 @@
 %define		_state		stable
 %define		orgname		kdeartwork
-%define		qtver		4.4.3
+%define		qtver		4.6.1
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.2.0
-Release:	5
+Version:	4.4.0
+Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	d81623b60c7deb314bc2e28a52254ac2
+# Source0-md5:	ee1a736960f47641cc65f7a1b3483445
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -19,15 +19,14 @@ BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtGui-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.88
-BuildRequires:	cmake >= 2.6.2
+BuildRequires:	cmake >= 2.8.0
 BuildRequires:	ed
-BuildRequires:	kde4-kdebase-devel >= %{version}
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 BuildRequires:	libxml2-progs
-BuildRequires:	phonon-devel >= 4.3.0
+BuildRequires:	phonon-devel >= 4.3.80
 BuildRequires:	qt4-qmake >= %{qtver}
-BuildRequires:	strigi-devel >= 0.6.3
+BuildRequires:	strigi-devel >= 0.7.0
 BuildRequires:	xscreensaver-base
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -245,15 +244,15 @@ Motywy pulpitu dla KDE.
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
-# ???
-#%patch1 -p1
+#%patch1 -p0
 
 %build
 install -d build
 cd build
 %cmake \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-	-DCMAKE_BUILD_TYPE=%{!?debug:release}%{?debug:debug} \
+	-DLIB_INSTALL_DIR=%{_libdir} \
+	-DCMAKE_BUILD_TYPE=%{!?debug:Release}%{?debug:Debug} \
 %if "%{_lib}" == "lib64"
 	-DLIB_SUFFIX=64 \
 %endif
@@ -290,9 +289,9 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%{_iconsdir}/ikons
 
-%files -n kde4-icons-kdeclassic
-%defattr(644,root,root,755)
-%{_iconsdir}/kdeclassic
+#%files -n kde4-icons-kdeclassic
+#%defattr(644,root,root,755)
+#%{_iconsdir}/kdeclassic
 
 #%files -n kde4-icons-kids
 #%defattr(644,root,root,755)
@@ -306,9 +305,9 @@ rm -rf $RPM_BUILD_ROOT
 #%defattr(644,root,root,755)
 #%{_iconsdir}/crystalsvg
 
-#%files -n kde4-icons-nuvola
-#%defattr(644,root,root,755)
-#%{_iconsdir}/nuvola
+%files -n kde4-icons-nuvola
+%defattr(644,root,root,755)
+%{_iconsdir}/nuvola
 
 %files -n kde4-style-phase
 %defattr(644,root,root,755)
