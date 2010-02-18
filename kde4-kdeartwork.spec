@@ -18,13 +18,14 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtGui-devel >= %{qtver}
+BuildRequires:	QtSvg-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
-BuildRequires:	ed
+BuildRequires:	eigen-devel
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
-BuildRequires:	libxml2-progs
 BuildRequires:	phonon-devel >= 4.3.80
+BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	strigi-devel >= 0.7.0
 BuildRequires:	xscreensaver-base
