@@ -242,6 +242,18 @@ KDE Desktop Themes.
 %description -n kde4-desktopthemes -l pl.UTF-8
 Motywy pulpitu dla KDE.
 
+%package -n kde4-decoration-aurorae-themes
+Summary:	Aurorae window decoration themes
+Summary(pl.UTF-8):	Motywy dekoracji okien dla aurorae
+Group:		X11/Amusements
+Requires:	kde4-decoration-aurorae >= %{version}
+
+%description -n kde4-decoration-aurorae-themes
+Several window decoration themes for aurorae.
+
+%description -n kde4-decoration-aurorae-themes -l pl.UTF-8
+Różne motywy dekoracji okien dla aurorae.
+
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
@@ -270,10 +282,6 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-#%files -n kde4-decoration-icewm
-#%defattr(644,root,root,755)
-#%{_datadir}/apps/kwin/icewm-themes
-
 %files -n kde4-ColorSchemes
 %defattr(644,root,root,755)
 %{_datadir}/apps/color-schemes/*.colors
@@ -281,30 +289,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -n kde4-emoticons
 %defattr(644,root,root,755)
 %{_datadir}/emoticons
-
-#%files -n kde4-icons-Locolor
-#%defattr(644,root,root,755)
-#%{_iconsdir}/Locolor
-
-#%files -n kde4-icons-ikons
-#%defattr(644,root,root,755)
-#%{_iconsdir}/ikons
-
-#%files -n kde4-icons-kdeclassic
-#%defattr(644,root,root,755)
-#%{_iconsdir}/kdeclassic
-
-#%files -n kde4-icons-kids
-#%defattr(644,root,root,755)
-#%{_iconsdir}/kids
-
-#%files -n kde4-icons-slick
-#%defattr(644,root,root,755)
-#%{_iconsdir}/slick
-
-#%files -n kde4-icons-crystalsvg
-#%defattr(644,root,root,755)
-#%{_iconsdir}/crystalsvg
 
 %files -n kde4-icons-nuvola
 %defattr(644,root,root,755)
@@ -315,11 +299,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/kde4/kstyle_phase_config.so
 %attr(755,root,root) %{_libdir}/kde4/plugins/styles/phasestyle.so
 %{_datadir}/apps/kstyle/themes/phase.themerc
-
-#%files kworldclock
-#%defattr(644,root,root,755)
-#%dir %{_datadir}/apps/kworldclock
-#%{_datadir}/apps/kworldclock/maps
 
 %files screensavers
 %defattr(644,root,root,755)
@@ -346,3 +325,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/apps/desktoptheme/Silicon
 %{_datadir}/apps/desktoptheme/heron
 %{_datadir}/apps/desktoptheme/slim-glow
+
+%files -n kde4-decoration-aurorae-themes
+%defattr(644,root,root,755)
+%dir %{_datadir}/apps/aurorae
+%dir %{_datadir}/apps/aurorae/themes
+%{_datadir}/apps/aurorae/themes/Air-Oxygen
+%{_datadir}/apps/aurorae/themes/Oxygen
