@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.6.5
+Version:	4.7.0
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	3d9ce16601b168afdc3b66f7ade73571
+# Source0-md5:	530cacf9ecd914aaddc25a9e86064806
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -25,7 +25,7 @@ BuildRequires:	eigen >= 1:2.0.12-3
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 # rotating images
-BuildRequires:	kde4-kdegraphics-devel >= %{version}
+BuildRequires:	libkexiv2-devel >= %{version}
 BuildRequires:	phonon-devel >= 4.4.1
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
@@ -172,6 +172,17 @@ KDE Icons Theme - nuvola.
 
 %description -n kde4-icons-nuvola -l pl.UTF-8
 Motyw ikon dla KDE - nuvola.
+
+%package -n kde4-icons-mono
+Summary:	KDE Icons Theme - mono
+Summary(pl.UTF-8):	Motyw ikon dla KDE - mono
+Group:		X11/Amusements
+
+%description -n kde4-icons-mono
+KDE Icons Theme - mono.
+
+%description -n kde4-icons-mono -l pl.UTF-8
+Motyw ikon dla KDE - mono.
 
 %package -n kde4-style-phase
 Summary:	KDE Style - Phase
@@ -368,6 +379,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_iconsdir}/nuvola
 
+%files -n kde4-icons-mono
+%defattr(644,root,root,755)
+%{_iconsdir}/mono
+
 %files -n kde4-style-phase
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/kde4/kstyle_phase_config.so
@@ -393,7 +408,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde4-desktopthemes
 %defattr(644,root,root,755)
+%{_datadir}/apps/desktoptheme/Androbit
 %{_datadir}/apps/desktoptheme/Aya
+%{_datadir}/apps/desktoptheme/Produkt
+%{_datadir}/apps/desktoptheme/Tibanna
 %{_datadir}/apps/desktoptheme/slim-glow
 
 %files -n kde4-decoration-aurorae-themes
