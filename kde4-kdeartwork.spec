@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.8.0
+Version:	4.8.1
 Release:	1
 License:	LGPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	19f5f7c2294deae9741a6cd70005cc4a
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/xz/%{orgname}-%{version}.tar.xz
+# Source0-md5:	be817818f3e1971a31a8606e49f522a1
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -25,7 +25,7 @@ BuildRequires:	eigen >= 1:2.0.12-3
 # for kscreensaver.h
 BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
 # rotating images
-BuildRequires:	libkexiv2-devel >= %{version}
+BuildRequires:	kde4-libkexiv2-devel >= %{version}
 BuildRequires:	phonon-devel >= 4.4.1
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
