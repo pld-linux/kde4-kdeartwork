@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.9.5
+Version:	4.10.0
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	a710d1f50bb23595a5f7a52fbdde7cf1
+# Source0-md5:	b9e933ed0de35f48c93a18caaa3a071b
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -256,18 +256,6 @@ KDE Desktop Themes.
 %description -n kde4-desktopthemes -l pl.UTF-8
 Motywy pulpitu dla KDE.
 
-%package -n kde4-decoration-aurorae-themes
-Summary:	Aurorae window decoration themes
-Summary(pl.UTF-8):	Motywy dekoracji okien dla aurorae
-Group:		X11/Amusements
-Requires:	kde4-decoration-aurorae >= %{version}
-
-%description -n kde4-decoration-aurorae-themes
-Several window decoration themes for aurorae.
-
-%description -n kde4-decoration-aurorae-themes -l pl.UTF-8
-Różne motywy dekoracji okien dla aurorae.
-
 %package -n kde4-decoration-kde2
 Summary:	KDE Window Decoration - kde2
 Summary(pl.UTF-8):	Dekoracja okna dla KDE - kde2
@@ -413,13 +401,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/apps/desktoptheme/Produkt
 %{_datadir}/apps/desktoptheme/Tibanna
 %{_datadir}/apps/desktoptheme/slim-glow
-
-%files -n kde4-decoration-aurorae-themes
-%defattr(644,root,root,755)
-%dir %{_datadir}/apps/aurorae
-%dir %{_datadir}/apps/aurorae/themes
-%{_datadir}/apps/aurorae/themes/Air-Oxygen
-%{_datadir}/apps/aurorae/themes/Oxygen
 
 %files -n kde4-decoration-kde2
 %defattr(644,root,root,755)
