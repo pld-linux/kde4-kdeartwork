@@ -65,6 +65,9 @@ Summary:	KDE ColorSchemes
 Summary(pl.UTF-8):	Schematy kolorów dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase-workspace >= %{version}
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n kde4-ColorSchemes
 KDE ColorSchemes.
@@ -77,6 +80,9 @@ Summary:	KDE emoticons themes
 Summary(pl.UTF-8):	Motywy emotikon dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdelibs >= %{version}
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n kde4-emoticons
 KDE emoticons themes.
@@ -177,6 +183,9 @@ Motyw ikon dla KDE - nuvola.
 Summary:	KDE Icons Theme - mono
 Summary(pl.UTF-8):	Motyw ikon dla KDE - mono
 Group:		X11/Amusements
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n kde4-icons-mono
 KDE Icons Theme - mono.
@@ -225,6 +234,9 @@ Summary:	KDE Sounds
 Summary(pl.UTF-8):	Dźwięki dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase >= %{version}
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description sounds
 KDE Sounds.
@@ -237,6 +249,9 @@ Summary:	KDE Wallpapers
 Summary(pl.UTF-8):	Tapety dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdelibs >= %{version}
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description wallpapers
 KDE Wallpapers.
@@ -249,6 +264,9 @@ Summary:	KDE Desktop Themes
 Summary(pl.UTF-8):	Motywy pulpitu dla KDE
 Group:		X11/Amusements
 Requires:	kde4-kdebase-workspace >= %{version}
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n kde4-desktopthemes
 KDE Desktop Themes.
