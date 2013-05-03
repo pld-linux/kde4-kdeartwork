@@ -48,18 +48,6 @@ Pakiet ten zawiera różne grafiki i tym podobne dla KDE.
 kdeartwork contém temas, sons, papéis de parede e estilos de janelas
 adicionais para o KDE.
 
-%package -n kde4-decoration-icewm
-Summary:	Extensions for KDE IceWM decoration
-Summary(pl.UTF-8):	Rozszerzenie dekoracji okna "IceWM" dla KDE
-Group:		X11/Amusements
-Requires:	kde4-kdebase-workspace >= %{version}
-
-%description -n kde4-decoration-icewm
-Extensions for KDE "IceWM" decoration.
-
-%description -n kde4-decoration-icewm -l pl.UTF-8
-Rozszerzenie dekoracji okna IceWM dla KDE.
-
 %package -n kde4-ColorSchemes
 Summary:	KDE ColorSchemes
 Summary(pl.UTF-8):	Schematy kolorów dla KDE
@@ -89,84 +77,6 @@ KDE emoticons themes.
 
 %description -n kde4-emoticons -l pl.UTF-8
 Motywy emotikon dla KDE.
-
-%package -n kde4-icons-Locolor
-Summary:	KDE Icons Theme - locolor
-Summary(pl.UTF-8):	Motyw ikon dla KDE - locolor
-Group:		X11/Amusements
-
-%description -n kde4-icons-Locolor
-KDE Icons Theme - locolor.
-
-%description -n kde4-icons-Locolor -l pl.UTF-8
-Motyw ikon dla KDE - locolor.
-
-%package -n kde4-icons-Technical
-Summary:	KDE Icons Theme - Technical
-Summary(pl.UTF-8):	Motyw ikon dla KDE - Technical
-Group:		X11/Amusements
-
-%description -n kde4-icons-Technical
-KDE Icons Theme - Technical.
-
-%description -n kde4-icons-Technical -l pl.UTF-8
-Motyw ikon dla KDE - Technical.
-
-%package -n kde4-icons-ikons
-Summary:	KDE Icons Theme - ikons
-Summary(pl.UTF-8):	Motyw ikon dla KDE - ikons
-Group:		X11/Amusements
-
-%description -n kde4-icons-ikons
-KDE Icons Theme - ikons.
-
-%description -n kde4-icons-ikons -l pl.UTF-8
-Motyw ikon dla KDE - ikons.
-
-%package -n kde4-icons-kdeclassic
-Summary:	KDE Icons Theme - kdeclassic
-Summary(pl.UTF-8):	Motyw ikon dla KDE - kdeclassic
-Group:		X11/Amusements
-
-%description -n kde4-icons-kdeclassic
-KDE Icons Theme - kdeclassic.
-
-%description -n kde4-icons-kdeclassic -l pl.UTF-8
-Motyw ikon dla KDE - kdeclassic.
-
-%package -n kde4-icons-kids
-Summary:	KDE Icons Theme - kids
-Summary(pl.UTF-8):	Motyw ikon dla KDE - kids
-Group:		X11/Amusements
-
-%description -n kde4-icons-kids
-KDE Icons Theme - kids.
-
-%description -n kde4-icons-kids -l pl.UTF-8
-Motyw ikon dla KDE - kids.
-
-%package -n kde4-icons-slick
-Summary:	KDE Icons Theme - slick
-Summary(pl.UTF-8):	Motyw ikon dla KDE - slick
-Group:		X11/Amusements
-
-%description -n kde4-icons-slick
-KDE Icons Theme - slick.
-
-%description -n kde4-icons-slick -l pl.UTF-8
-Motyw ikon dla KDE - slick.
-
-%package -n kde4-icons-crystalsvg
-Summary:	KDE Icons Theme - crystalsvg
-Summary(pl.UTF-8):	Motyw ikon dla KDE - crystalsvg
-Group:		X11/Amusements
-Requires:	hicolor-icon-theme
-
-%description -n kde4-icons-crystalsvg
-KDE Icons Theme - crystalsvg.
-
-%description -n kde4-icons-crystalsvg -l pl.UTF-8
-Motyw ikon dla KDE - crystalsvg.
 
 %package -n kde4-icons-nuvola
 Summary:	KDE Icons Theme - nuvola
@@ -204,18 +114,6 @@ KDE Style - Phase.
 
 %description -n kde4-style-phase -l pl.UTF-8
 Styl dla KDE - Phase.
-
-%package kworldclock
-Summary:	Themes for kworldclock
-Summary(pl.UTF-8):	Motywy dla kworldclock
-Group:		X11/Amusements
-#Requires:	kde4-kdetoys-kworldclock >= %{version}
-
-%description kworldclock
-Themes for kworldclock.
-
-%description kworldclock -l pl.UTF-8
-Motywy dla kworldclock.
 
 %package screensavers
 Summary:	Screen savers for KDE
