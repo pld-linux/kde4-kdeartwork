@@ -1,6 +1,7 @@
 %define		_state		stable
 %define		orgname		kdeartwork
 %define		qtver		4.8.3
+%define		kdeworkspacever	4.11.0
 
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
@@ -23,7 +24,7 @@ BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	eigen >= 1:2.0.12-3
 # for kscreensaver.h
-BuildRequires:	kde4-kdebase-workspace-devel >= %{version}
+BuildRequires:	kde4-kdebase-workspace-devel >= %{kdeworkspacever}
 # rotating images
 BuildRequires:	kde4-libkexiv2-devel >= %{version}
 BuildRequires:	phonon-devel >= 4.4.1
@@ -52,7 +53,7 @@ adicionais para o KDE.
 Summary:	KDE ColorSchemes
 Summary(pl.UTF-8):	Schematy kolorów dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase-workspace >= %{version}
+Requires:	kde4-kdebase-workspace >= %{kdeworkspacever}
 %if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
 %endif
@@ -119,7 +120,7 @@ Styl dla KDE - Phase.
 Summary:	Screen savers for KDE
 Summary(pl.UTF-8):	Wygaszacze ekranu dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase-workspace-screensavers >= %{version}
+Requires:	kde4-kdebase-workspace-screensavers >= %{kdeworkspacever}
 
 %description screensavers
 Screen savers for KDE.
@@ -161,7 +162,7 @@ Tapety dla KDE.
 Summary:	KDE Desktop Themes
 Summary(pl.UTF-8):	Motywy pulpitu dla KDE
 Group:		X11/Amusements
-Requires:	kde4-kdebase-workspace >= %{version}
+Requires:	kde4-kdebase-workspace >= %{kdeworkspacever}
 %if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
 %endif
