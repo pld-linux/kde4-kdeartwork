@@ -6,12 +6,12 @@
 Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
-Version:	4.11.4
+Version:	4.12.0
 Release:	1
 License:	LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	fe311939a648b1782cf9b2c8fb9d5afa
+# Source0-md5:	9dbf0d6f541b05370e57acd477c2f60c
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
 URL:		http://www.kde.org/
@@ -33,6 +33,7 @@ BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	strigi-devel >= 0.7.2
 BuildRequires:	xscreensaver-base
+Obsoletes:	kde4-kdeartwork-sounds < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -127,21 +128,6 @@ Screen savers for KDE.
 
 %description screensavers -l pl.UTF-8
 Wygaszacze ekranu dla KDE.
-
-%package sounds
-Summary:	KDE Sounds
-Summary(pl.UTF-8):	Dźwięki dla KDE
-Group:		X11/Amusements
-Requires:	kde4-kdebase >= %{version}
-%if "%{_rpmversion}" >= "5"
-BuildArch:	noarch
-%endif
-
-%description sounds
-KDE Sounds.
-
-%description sounds -l pl.UTF-8
-Dźwięki dla KDE.
 
 %package wallpapers
 Summary:	KDE Wallpapers
@@ -302,10 +288,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kde4/services/ScreenSavers/*.desktop
 %{_datadir}/apps/kfiresaver
 %{_datadir}/apps/kscreensaver
-
-%files sounds
-%defattr(644,root,root,755)
-%{_datadir}/sounds/*
 
 %files wallpapers
 %defattr(644,root,root,755)
