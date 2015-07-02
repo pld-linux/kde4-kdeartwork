@@ -84,6 +84,9 @@ Motywy emotikon dla KDE.
 Summary:	KDE Icons Theme - nuvola
 Summary(pl.UTF-8):	Motyw ikon dla KDE - nuvola
 Group:		X11/Amusements
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n kde4-icons-nuvola
 KDE Icons Theme - nuvola.
