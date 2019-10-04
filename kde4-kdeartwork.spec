@@ -14,6 +14,7 @@ Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.
 # Source0-md5:	444c3fea54711a840bca705ea90c8cb2
 Patch0:		%{name}-findxscreensaver.patch
 Patch1:		%{name}-crystalsvg-hicolor.patch
+Patch2:		cmake.patch
 URL:		http://www.kde.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	Qt3Support-devel >= %{qtver}
@@ -242,8 +243,10 @@ widocznymi, cienkimi krawędziami.
 %setup -q -n %{orgname}-%{version}
 %patch0 -p0
 #%patch1 -p0
+%patch2 -p1
 
 %build
+#export CXXFLAGS="%{rpmcxxflags} -std=gnu++98"
 install -d build
 cd build
 %cmake \

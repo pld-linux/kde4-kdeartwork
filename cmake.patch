@@ -1,0 +1,10 @@
+--- kdeartwork-4.14.3/CMakeLists.txt~	2013-10-18 18:04:24.000000000 +0200
++++ kdeartwork-4.14.3/CMakeLists.txt	2019-10-04 10:26:44.792194619 +0200
+@@ -6,6 +6,7 @@
+ find_package(KDE4 REQUIRED)
+ include (KDE4Defaults)
+ include (MacroLibrary)
++include(CheckIncludeFiles)
+ 
+ add_definitions (${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
+ add_definitions( -DQT_NO_CAST_FROM_ASCII )
