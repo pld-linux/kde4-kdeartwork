@@ -7,7 +7,7 @@ Summary:	K Desktop Environment - artwork
 Summary(pl.UTF-8):	K Desktop Environment - grafiki itp.
 Name:		kde4-kdeartwork
 Version:	4.14.3
-Release:	3
+Release:	4
 License:	LGPL
 Group:		X11/Applications
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
@@ -34,6 +34,7 @@ BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	strigi-devel >= 0.7.2
 BuildRequires:	xscreensaver-base
+BuildConflicts:	eigen3
 Obsoletes:	kde4-kdeartwork-sounds < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -246,7 +247,6 @@ widocznymi, cienkimi krawędziami.
 %patch2 -p1
 
 %build
-#export CXXFLAGS="%{rpmcxxflags} -std=gnu++98"
 install -d build
 cd build
 %cmake \
