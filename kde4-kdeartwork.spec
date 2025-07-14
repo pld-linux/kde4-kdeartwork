@@ -230,9 +230,9 @@ widocznymi, cienkimi krawędziami.
 
 %prep
 %setup -q -n %{orgname}-%{version}
-%patch0 -p0
+%patch -P0 -p0
 #%patch1 -p0
-%patch2 -p1
+%patch -P2 -p1
 
 %build
 install -d build
