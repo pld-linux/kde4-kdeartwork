@@ -231,7 +231,7 @@ widocznymi, cienkimi krawędziami.
 %prep
 %setup -q -n %{orgname}-%{version}
 %patch -P0 -p0
-#%patch1 -p0
+#%%patch1 -p0
 %patch -P2 -p1
 
 %build
